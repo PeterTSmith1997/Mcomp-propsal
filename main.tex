@@ -27,25 +27,32 @@
 \fancyhf{}
 \renewcommand{\footrulewidth}{1pt}
 \cfoot{16018262}
-\rhead{KC6006}
+\rhead{KF7004}
 \rfoot{\thepage \hspace{0cm} of \pageref{LastPage}}
 \usepackage{subcaption} 
 
 
+
 \usepackage[style=authoryear-ibid,backend=biber]{biblatex}
-\addbibresource{References.bib}
+\addbibresource{writing.bib}
 \title{KF7004 – MComp Computing Research Project \\ MComp Research Proposal}
 \author{16018262}
 \date{Sept 22}
 
+
 \begin{document}
 
 \maketitle
-
+\begin{center}
+    word count:
+\end{center}
+\tableofcontents
 \section{Research question}
 \input{Research question}
 \section{Aims}
 \input{aims}
 \section{literature review}
 \input{literature review}
+\section{ethics}
+\printbibliography
 \end{document}
