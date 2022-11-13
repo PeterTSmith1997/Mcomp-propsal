@@ -11,12 +11,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{csquotes}
-\usepackage{fancyhdr}\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
 \usepackage{parskip}
 %\usepackage{natbib}
 \usepackage{pgfgantt}
 \usepackage{lscape}
-%\usepackage{pdfpages}
+\usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{xcolor}
 %\usepackage[minted]{tcolorbox}
@@ -49,11 +50,13 @@
 \tableofcontents
 \section{Research question}
 \input{Researchquestion}
+\section{Literature review}
+\input{literature review}
 \section{Aims}
 \input{aims}
-\section{literature review}
-\input{literature review}
-\section{legal, social and ethical considerations}
+\subsection{Technical approaches}
+\input{technical approaches}
+\section{Legal, social and ethical considerations}
 \input{Ethics}
 \section{Scope}
 \input{scope}
@@ -64,4 +67,13 @@
 \appendix
 \section{Ethics} \label{ethics}
 %\includepdf[pages=-]{Website risk.pdf}
+\newpage
+\section{HTTP Status codes} \label{codes}
+\vspace{5mm} %5mm vertical space
+\begin{figure}[] \label{HTTP Status codes}
+    \centering
+ %    \includegraphics[width=170mm]{images/HTTP.png}
+    \caption{HTTP Status codes}
+    \label{fig:my_label}
+\end{figure}
 \end{document}
